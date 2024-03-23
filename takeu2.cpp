@@ -44,13 +44,6 @@ void pattern4(int n){
     }
     cout<<endl;
   }
-  
-
-
-
-
-
-
 
 }
 void pattern5(int n){
@@ -128,8 +121,7 @@ void pattern10(int n){
       start=1-start;
     }
      cout<<endl;
-  }
-  
+  } 
 }
 void pattern11(int n){
 int spacee=2* (n-1);
@@ -270,9 +262,10 @@ void pattern18(int n){
 int main() {
 
 //pattern 1
+cout<<"enter how many times you want to take test";
 int t;
 cin>>t;
-
+cout<<"enter how many elemnts you want in an patterns";
 for(int i=0;i<t;i++){ 
 int n;
 cin>>n;
