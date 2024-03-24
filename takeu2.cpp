@@ -257,7 +257,43 @@ void pattern18(int n){
           cout<<endl;       
        }
 }
+void pattern19(int n){
+  //stars
+    int space=2*n-2;
+  for(int i=1;i<=2*n-1;i++){
+      int star=i;
+      if(i>n){star=2*n-i;}
+      for (int j = 1; j <= star; j++)
+      {
+        cout<<"*";
+      }
+  //spaces
 
+    for(int j=1;j<=space;j++){
+      cout<<" ";
+    }
+  //stars
+      for (int j = 1; j <= star; j++)
+      {
+        cout<<"*";
+      }
+      cout<<endl;
+      if(i<n) space-=2;
+     else space+=2;
+    }
+}
+void pattern20(int n){
+for (int i = 0; i < n; i++)
+{
+  for(int j=0;  j<n  ;j++){
+            if( i==0 || i==n-1||j==0||j==n-1){
+            cout<<"*";
+        }
+             else{cout<<" ";}
+         }
+       cout<<endl;
+    }
+}
 
 int main() {
 
@@ -287,7 +323,8 @@ pattern15(n);
 pattern16(n);
 pattern17(n);
 pattern18(n);
-
+pattern19(n);
+pattern20(n);
 }
  
 return 0;
